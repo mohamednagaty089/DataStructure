@@ -1,5 +1,6 @@
 import LinkedImplementation.LinkedStack;
 import LinkedImplementation.Node;
+import Queue.ArrayQueue;
 
 public class Testing {
 
@@ -20,6 +21,7 @@ public class Testing {
 		linked.push(35);
 		linked.push(8);
 		///
+		
 //		System.out.println(linked.pop());
 //		System.out.println(linked.pop());
 //		System.out.println(linked.pop());
@@ -27,10 +29,30 @@ public class Testing {
 //		System.out.println(linked.pop());
 		Node linkedstack=linked.getStack();
 		while(linkedstack!=null) {
-			System.out.println(linkedstack.element);
-			linkedstack=linkedstack.next;
+			 System.out.println(linkedstack.element);
+			 linkedstack=linkedstack.next;
+			
 		}
+		//testing queue
+		ArrayQueue queue=new ArrayQueue();
 		//System.out.println(stack.push(0));
+		queue.enqueue(10);
+		queue.enqueue(10);
+		queue.enqueue(10);
+		queue.enqueue(10);
+		queue.enqueue(10);
+		queue.enqueue(10);
+		
+		queue.enqueue(3333);
+		
+		queue.dequeue();
+		queue.enqueue(23322);
+		
+		int arr[]=queue.getQueue();
+		for (int i : arr) {
+			System.out.println(i);
+		} 
+
 
 	}
 
