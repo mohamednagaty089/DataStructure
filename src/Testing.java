@@ -1,6 +1,8 @@
 import LinkedImplementation.LinkedStack;
 import LinkedImplementation.Node;
 import Queue.ArrayQueue;
+import Queue.LinkedQueue;
+import Queue.NodeQueue;
 
 public class Testing {
 
@@ -52,7 +54,22 @@ public class Testing {
 		for (int i : arr) {
 			System.out.println(i);
 		} 
-
+		//queue in linked implementation
+		NodeQueue node=new NodeQueue();
+		node.item=12;
+		NodeQueue node1=new NodeQueue();
+		node1.item=112;
+		NodeQueue node2=new NodeQueue();
+		node2.item=112;
+		NodeQueue node3=new NodeQueue();
+		node3.item=1221;
+		LinkedQueue linkqueue=new LinkedQueue();
+		linkqueue.enqueue(node);
+		linkqueue.enqueue(node1);
+		linkqueue.enqueue(node2);
+		linkqueue.enqueue(node3);
+        System.out.println(linkqueue.dequeue());
+        System.out.println(linkqueue.dequeue());
 
 	}
 
