@@ -93,7 +93,7 @@ public class Testing {
       
         System.out.println("start printint list");
         list.printlist();
-        //linkedlist
+        //linkedlist 
         ListNode<String> lnode1=new ListNode<String>();
         lnode1.item="mohamed";
         ListNode<Double> lnode2=new ListNode<>();
@@ -122,7 +122,7 @@ public class Testing {
         	ls=ls.next;
         	count++;
         }
-        //doubly list adding from top retrive from top and bottom
+        //doubly list adding from top retrive from top and bottom 
         DoublyLinkedList doublylist=new DoublyLinkedList();
         DoublyListNode dl1=new DoublyListNode();
         dl1.item="mohamed";
@@ -138,6 +138,7 @@ public class Testing {
          doublylist.insert(dl4);
          int count1=doublylist.getListSize();
          DoublyListNode dlist= doublylist.getListFrombottom();
+         //looping from bottom of list
      	while(count1>0){
      	   	 System.out.println(dlist.item);
      	   	 dlist=dlist.back;
