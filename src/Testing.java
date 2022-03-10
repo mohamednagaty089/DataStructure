@@ -122,7 +122,7 @@ public class Testing {
         	ls=ls.next;
         	count++;
         }
-        //
+        //doubly list adding from top retrive from top and bottom
         DoublyLinkedList doublylist=new DoublyLinkedList();
         DoublyListNode dl1=new DoublyListNode();
         dl1.item="mohamed";
