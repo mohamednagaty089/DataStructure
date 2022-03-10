@@ -1,4 +1,4 @@
-package LinkedImplementation;
+package Stack;
 
 public class LinkedStack {
 	private Node top;

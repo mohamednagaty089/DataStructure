@@ -1,4 +1,4 @@
-package LinkedImplementation;
+package Stack;
 
 public class Node {
 public int element;

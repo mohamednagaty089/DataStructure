@@ -1,9 +1,13 @@
-import LinkedImplementation.LinkedStack;
-import LinkedImplementation.Node;
+import List.LinkedList;
+
+import List.ArrayList;
+
 import Queue.ArrayQueue;
 import Queue.LinkedQueue;
 import Queue.NodeQueue;
-
+import Stack.LinkedStack;
+import Stack.Node;
+import List.ListNode;
 public class Testing {
 
 	public static void main(String[] args) {
@@ -70,6 +74,42 @@ public class Testing {
 		linkqueue.enqueue(node3);
         System.out.println(linkqueue.dequeue());
         System.out.println(linkqueue.dequeue());
+        ArrayList list=new ArrayList(5);
+        list.add(23);
+        list.add(34);
+        list.add(22);
+        list.add(444,0);
+        list.remove(0);
+      
+        System.out.println("start printint list");
+        list.printlist();
+        //linkedlist
+        ListNode<String> lnode1=new ListNode();
+        lnode1.item="mohamed";
+        ListNode<Double> lnode2=new ListNode();
+        lnode2.item=23.3;
+        ListNode<Integer> lnode3=new ListNode();
+        lnode3.item=34;
+        ListNode<String> lnode4=new ListNode();
+        lnode4.item="Nagaty";
+        ListNode<String> lnode5=new ListNode();
+        lnode5.item="Badawy";
+        LinkedList list3=new LinkedList();
+        list3.Add(lnode4);
+        list3.Add(lnode3);
+        list3.Add(lnode2);
+        list3.Add(lnode1);
+        list3.Add(lnode4);
+        list3.Add(lnode5, 0);
+        ListNode ls=list3.getList();
+        int count=0;
+        int listsize=list3.getListSize();
+        while(count<listsize) {
+        	System.out.println(ls.item);
+        	ls=ls.next;
+        	count++;
+        }
+
 
 	}
 
