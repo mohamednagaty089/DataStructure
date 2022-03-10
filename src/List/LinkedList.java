@@ -34,6 +34,19 @@ public class LinkedList {
 		head=node;
 		size++;
 	}
+	public void remove(int position) {
+		if(position==0) {
+			head=head.next;
+			
+		}else {
+			ListNode temp=head;
+			for(int i=0;i<position-1;i++) {
+				temp=temp.next;
+			}
+			temp.next=temp.next.next;
+		}
+		size--;
+	}
 	public ListNode getList() {
 		return head;
 	}

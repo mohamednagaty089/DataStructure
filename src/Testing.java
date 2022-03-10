@@ -103,9 +103,12 @@ public class Testing {
         list3.Add(lnode1);
         list3.Add(lnode4);
         list3.Add(lnode5, 0);
+        list3.remove(0);
+        list3.remove(1);
         ListNode ls=list3.getList();
         int count=0;
         int listsize=list3.getListSize();
+        System.out.println("printing element linked list");
         while(count<listsize) {
         	System.out.println(ls.item);
         	ls=ls.next;
