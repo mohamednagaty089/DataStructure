@@ -3,7 +3,8 @@ import List.LinkedList;
 import Stack.Stack;
 
 import List.ArrayList;
-
+import List.DoublyLinkedList;
+import List.DoublyListNode;
 import Queue.ArrayQueue;
 import Queue.LinkedQueue;
 import Queue.NodeQueue;
@@ -11,7 +12,11 @@ import Stack.LinkedStack;
 import Stack.Node;
 import List.ListNode;
 public class Testing {
-
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Stack stack=new Stack(4);
@@ -30,6 +35,9 @@ public class Testing {
 		linked.push(8);
 		///
 		
+		String name1=new String("emad");
+		String name2=new String("emad");
+		System.out.println(name1.equals(name2));
 //		System.out.println(linked.pop());
 //		System.out.println(linked.pop());
 //		System.out.println(linked.pop());
@@ -86,15 +94,15 @@ public class Testing {
         System.out.println("start printint list");
         list.printlist();
         //linkedlist
-        ListNode<String> lnode1=new ListNode();
+        ListNode<String> lnode1=new ListNode<String>();
         lnode1.item="mohamed";
-        ListNode<Double> lnode2=new ListNode();
+        ListNode<Double> lnode2=new ListNode<>();
         lnode2.item=23.3;
-        ListNode<Integer> lnode3=new ListNode();
+        ListNode<Integer> lnode3=new ListNode<>();
         lnode3.item=34;
-        ListNode<String> lnode4=new ListNode();
+        ListNode<String> lnode4=new ListNode<>();
         lnode4.item="Nagaty";
-        ListNode<String> lnode5=new ListNode();
+        ListNode<String> lnode5=new ListNode<>();
         lnode5.item="Badawy";
         LinkedList list3=new LinkedList();
         list3.Add(lnode4);
@@ -114,6 +122,31 @@ public class Testing {
         	ls=ls.next;
         	count++;
         }
+        //
+        DoublyLinkedList doublylist=new DoublyLinkedList();
+        DoublyListNode dl1=new DoublyListNode();
+        dl1.item="mohamed";
+        DoublyListNode dl2=new DoublyListNode();
+         dl2.item="mostafa";
+         DoublyListNode dl3=new DoublyListNode();
+         dl3.item="badawy";
+         DoublyListNode dl4=new DoublyListNode();
+         dl4.item="islam";
+         doublylist.insert(dl1);
+         doublylist.insert(dl2);
+         doublylist.insert(dl3);
+         doublylist.insert(dl4);
+         int count1=doublylist.getListSize();
+         DoublyListNode dlist= doublylist.getListFrombottom();
+     	while(count1>0){
+     	   	 System.out.println(dlist.item);
+     	   	 dlist=dlist.back;
+     	   	 count1--;
+     	    }
+      
+         
+         
+         
 
 
 	}
