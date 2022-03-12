@@ -8,6 +8,7 @@ import List.DoublyListNode;
 import Queue.ArrayQueue;
 import Queue.LinkedQueue;
 import Queue.NodeQueue;
+import Sorting.BinarySearch;
 import Stack.LinkedStack;
 import Stack.Node;
 import List.ListNode;
@@ -144,8 +145,24 @@ public class Testing {
      	   	 dlist=dlist.back;
      	   	 count1--;
      	    }
-      
-         
+     	BinarySearch binary=new BinarySearch();
+     	binary.insertOrder(5);
+     	binary.insertOrder(12);
+     	binary.insertOrder(1);
+     	binary.insertOrder(3);
+     	binary.insertOrder(2);
+     	binary.insertOrder(7);
+      	binary.insertOrder(38);
+     	binary.insertOrder(20);
+     	binary.insertOrder(7);
+        int arr22[]=binary.getOrderList();
+        for(int item : arr22) {
+        	System.out.println(item);
+        }
+        System.out.println("Searching on element ");
+        int check=binary.binarySearch(arr22,350);
+     
+         System.out.println(check);
          
          
 
